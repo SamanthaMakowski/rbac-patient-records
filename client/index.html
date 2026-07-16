@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Role-Based Patient Records</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <h1>Patient Records</h1>
+    <div class="role-picker">
+      <label for="role-select">Signed in as</label>
+      <select id="role-select">
+        <option value="doctor">Doctor</option>
+        <option value="nurse">Nurse</option>
+        <option value="receptionist">Receptionist</option>
+        <option value="admin">Admin</option>
+      </select>
+    </div>
+  </header>
+
+  <main class="layout">
+    <aside class="sidebar">
+      <h2>Patients</h2>
+      <ul id="patient-list"></ul>
+    </aside>
+
+    <section class="chart">
+      <div id="patient-detail" class="empty">Select a patient to view their record.</div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
