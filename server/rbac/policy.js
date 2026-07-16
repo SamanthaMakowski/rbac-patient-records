@@ -42,4 +42,25 @@ function filterPatientForRole(patient, role) {
   return filtered;
 }
 
-module.exports = { filterPatientForRole };
+function getWithheldFields(patient, role) {
+  const allowedFields = ACCESS_MATRIX[role];
+  if (!allowedFields) {
+    return { omitted: Object.keys(patient), redacted: [] };
+  }
+
+  const omitted = [];
+  const redacted = [];
+
+  for (const field of Object.keys(patient)) {
+    if (allowedFields.includes(field)) continue;
+    if (REDACTED_FIELDS.includes(field)) {
+      redacted.push(field);
+    } else {
+      omitted.push(field);
+    }
+  }
+
+  return { omitted, redacted };
+}
+
+module.exports = { filterPatientForRole, getWithheldFields };
