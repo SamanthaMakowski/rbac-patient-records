@@ -1,13 +1,14 @@
 {
   "name": "rbac-patient-records",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Role-based access control demo enforcing HIPAA minimum-necessary field access on patient records, filtered server-side by user role.",
+  "main": "server/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node server/server.js",
+    "test": "node server/rbac/policy.test.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["rbac", "healthcare", "hipaa", "access-control", "express"],
+  "author": "Samantha Makowski",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
