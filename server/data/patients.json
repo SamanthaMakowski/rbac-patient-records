@@ -1,0 +1,43 @@
+{
+  "patients": [
+    {
+      "id": "P001",
+      "name": "Maria Gonzalez",
+      "dateOfBirth": "1985-03-12",
+      "phone": "212-555-0142",
+      "address": "418 W 51st St, New York, NY 10019",
+      "appointment": "2026-07-22 10:30 AM, Dr. Reyes",
+      "insurance": "Aetna PPO, member 8842-114-06",
+      "ssn": "000-00-0001",
+      "diagnosis": "Type 2 diabetes, well controlled",
+      "medications": ["Metformin 500mg", "Lisinopril 10mg"],
+      "clinicalNotes": "A1c down to 6.4 from 7.1. Continue current regimen, recheck in 3 months."
+    },
+    {
+      "id": "P002",
+      "name": "James Whitfield",
+      "dateOfBirth": "1972-11-30",
+      "phone": "718-555-0198",
+      "address": "92 Clark St, Brooklyn, NY 11201",
+      "appointment": "2026-07-19 2:00 PM, Dr. Osei",
+      "insurance": "UnitedHealthcare HMO, member 5521-889-30",
+      "ssn": "000-00-0002",
+      "diagnosis": "Hypertension, stage 1",
+      "medications": ["Amlodipine 5mg"],
+      "clinicalNotes": "BP 138/88 in office. Patient reports good adherence. Reduce sodium, follow up 6 weeks."
+    },
+    {
+      "id": "P003",
+      "name": "Aisha Rahman",
+      "dateOfBirth": "1994-06-08",
+      "phone": "646-555-0176",
+      "address": "1203 Amsterdam Ave, New York, NY 10027",
+      "appointment": "2026-07-25 9:15 AM, Dr. Reyes",
+      "insurance": "Cigna PPO, member 3390-402-77",
+      "ssn": "000-00-0003",
+      "diagnosis": "Asthma, mild persistent",
+      "medications": ["Albuterol inhaler PRN", "Fluticasone 110mcg"],
+      "clinicalNotes": "Well controlled on current inhalers. No ER visits since last year. Renew prescriptions."
+    }
+  ]
+}
